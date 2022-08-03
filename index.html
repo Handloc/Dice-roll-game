@@ -4,7 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>Dice roll game</title>
   </head>
-  <body></body>
+  <body>
+    <div id="main-box">
+      <div id="player1-box" class="active">
+        <div class="inner-box">
+          <div class="name">PLAYER 1</div>
+          <div class="global-points">0</div>
+          <div class="points-box">
+            <div class="current-points-label">CURRENT POINTS</div>
+            <div class="current-points"><a> 0 </a></div>
+          </div>
+        </div>
+      </div>
+      <img src="images/dice-6.svg" id="dice-image" class="hidden" />
+      <button id="roll-dice-button">ROLL DICE</button>
+      <button id="hold-button">HOLD</button>
+      <button id="new-game-button">NEW GAME</button>
+      <div id="player2-box">
+        <div class="inner-box">
+          <div class="name">PLAYER 2</div>
+          <div class="global-points">0</div>
+          <div class="points-box">
+            <div class="current-points-label">CURRENT POINTS</div>
+            <div class="current-points">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
