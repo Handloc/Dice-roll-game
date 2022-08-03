@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(to top left, #a00023, #470168);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 120vh;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 1vh;
+}
+
+#player1-box,
+#player2-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 60vh;
+}
+
+/* #player1-box:hover,
+#player2-box:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+} */
+
+#player1-box {
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+
+#player2-box {
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+
+#roll-dice-button,
+#hold-button,
+#new-game-button,
+#dice-image {
+  position: absolute;
+}
+
+#roll-dice-button,
+#hold-button,
+#new-game-button {
+  height: 7vh;
+  width: 20vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 5vh;
+  font-size: 2.5vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#roll-dice-button:hover,
+#hold-button:hover,
+#new-game-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#roll-dice-button:active,
+#hold-button:active,
+#new-game-button:active {
+  background-color: rgb(200, 200, 200);
+}
+
+#hold-button {
+  top: 55vh;
+}
+
+#new-game-button {
+  top: 80vh;
+}
+
+#dice-image {
+  width: 10vh;
+  background-color: white;
+  border-radius: 14.7%;
+  top: 33vh;
+}
+
+.inner-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 30vh;
+  height: 70vh;
+}
+
+.name {
+  font-size: 5.5vh;
+  margin-top: -8vh;
+}
+
+.global-points {
+  font-size: 15vh;
+  margin-top: -5vh;
+  color: #8f1630;
+}
+
+.points-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #8f1630;
+  width: 30vh;
+  height: 20vh;
+  border-radius: 3vh;
+}
+
+.current-points-label {
+  font-size: 3vh;
+}
+
+.current-points {
+  font-size: 8vh;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.hidden {
+  display: none;
+}
