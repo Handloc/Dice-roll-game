@@ -29,11 +29,6 @@ body {
   width: 60vh;
 }
 
-/* #player1-box:hover,
-#player2-box:hover {
-  background-color: rgba(255, 255, 255, 0.35);
-} */
-
 #player1-box {
   border-top-left-radius: 1vh;
   border-bottom-left-radius: 1vh;
