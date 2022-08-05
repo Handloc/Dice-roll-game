@@ -77,7 +77,7 @@ function holdPoints() {
     globalPoints[activePlayer] += currentPoints;
     globalPointsText[activePlayer].textContent = globalPoints[activePlayer];
     currentPointsText[activePlayer].textContent = 0;
-    if (globalPoints[activePlayer] >= 10) {
+    if (globalPoints[activePlayer] >= 100) {
       winner();
     } else {
       switchPlayers();
