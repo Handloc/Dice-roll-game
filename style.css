@@ -78,7 +78,13 @@ body {
 }
 
 #new-game-button {
-  top: 80vh;
+  top: 45vh;
+}
+
+.winner0,
+.winner1 {
+  top: 10vh;
+  background-color: none;
 }
 
 #dice-image {
@@ -97,9 +103,12 @@ body {
   height: 70vh;
 }
 
-.name {
+.name,
+.winner0,
+.winner1 {
   font-size: 5.5vh;
   margin-top: -8vh;
+  color: #8f1630;
 }
 
 .global-points {
@@ -129,9 +138,14 @@ body {
 }
 
 .active {
+  transition: background-color 0.6s;
   background-color: rgba(255, 255, 255, 0.35);
 }
 
 .hidden {
   display: none;
+}
+
+.winner {
+  background-color: rgb(34, 34, 34);
 }
